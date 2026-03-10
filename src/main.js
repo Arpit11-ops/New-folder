@@ -106,7 +106,7 @@ function initHeroCard() {
   const dots = document.querySelectorAll('#rc-dots .rc-dot');
   const animElements = [titleEl, amountEl, periodEl, badgeEl];
 
-  heroIntervalId = setInterval(() => {
+  const triggerHeroAnim = () => {
     // Slide out (up)
     animElements.forEach(el => { if (el) el.classList.add('fade-out'); });
 
@@ -138,7 +138,14 @@ function initHeroCard() {
       // Slide in
       animElements.forEach(el => { if (el) el.classList.remove('fade-in-pre'); });
     }, 500);
-  }, 4500);
+  };
+
+  // Initial delay of 2.5s then start 4.5s cycle
+  setTimeout(() => {
+    if (!heroCard) return;
+    triggerHeroAnim();
+    heroIntervalId = setInterval(triggerHeroAnim, 4500);
+  }, 2500);
 }
 
 function initNumbersAnimation() {
@@ -157,7 +164,7 @@ function initNumbersAnimation() {
   const dots = document.querySelectorAll('#num-dots-container .num-dot');
   const animElements = [numEl, labelEl];
 
-  numbersIntervalId = setInterval(() => {
+  const triggerNumAnim = () => {
     // Slide out (up)
     animElements.forEach(el => { if (el) el.classList.add('fade-out'); });
 
@@ -186,7 +193,14 @@ function initNumbersAnimation() {
       // Slide in
       animElements.forEach(el => { if (el) el.classList.remove('fade-in-pre'); });
     }, 500);
-  }, 4500);
+  };
+
+  // Initial delay of 2s then start 4.5s cycle for numbers
+  setTimeout(() => {
+    if (!numSection) return;
+    triggerNumAnim();
+    numbersIntervalId = setInterval(triggerNumAnim, 4500);
+  }, 2000);
 }
 
 /* ── MAIN INITIALIZATION ── */
