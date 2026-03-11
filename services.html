@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AR Solutions India — Web Development & Web Hosting Company</title>
+<title>Our Services | Digital Marketing, Web & App Development | AR Solutions India</title>
+<meta name="description" content="Explore our premium services including web development, mobile apps, digital marketing, and SEO optimization tailored for business growth.">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/src/style.css">
 </head>
@@ -37,11 +38,21 @@
 
 <!-- Mobile Navigation -->
 <div class="mobile-nav" id="mobileNav">
-  <a href="./about.html" onclick="toggleMobileMenu()">About</a>
-  <a href="./services.html" onclick="toggleMobileMenu()">Services</a>
-  <a href="./hosting.html" onclick="toggleMobileMenu()">Hosting</a>
-  <a href="./index.html#domain" onclick="toggleMobileMenu()">Domain</a>
-  <button class="btn-signup" onclick="toggleMobileMenu(); window.location.href='./index.html#contact'" style="margin-top: 20px;">Get started</button>
+  <div class="mobile-nav-content">
+    <div class="mobile-nav-links">
+      <a href="./about.html" onclick="toggleMobileMenu()"><span>01</span> About</a>
+      <a href="./services.html" onclick="toggleMobileMenu()"><span>02</span> Services</a>
+      <a href="./hosting.html" onclick="toggleMobileMenu()"><span>03</span> Hosting</a>
+      <a href="./index.html#domain" onclick="toggleMobileMenu()"><span>04</span> Domain</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <button class="btn-signup" onclick="toggleMobileMenu(); window.location.href='./index.html#contact'">Get started</button>
+      <div class="mobile-socials">
+        <span>info@arsolutionsindia.com</span>
+        <span>+91-98911143977</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <main id="swup" class="transition-fade">
@@ -62,60 +73,90 @@
       <p style="font-size: 1.15rem; color: #475569; max-width: 600px; margin: 0 auto; line-height: 1.7;">Elevate your digital presence with high-fidelity design, robust engineering, and strategic marketing built for growth.</p>
     </div>
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 32px;">
+    <div class="grid-auto-fit">
       
       <!-- Card 1 -->
-      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 28px; padding: 48px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);" onmouseover="this.style.borderColor='#3B82F6'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 30px 60px -12px rgba(37,99,235,0.1)';" onmouseout="this.style.borderColor='#E2E8F0'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01)';">
-        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #EFF6FF, #DBEAFE); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+      <div class="professional-card">
+        <div class="card-icon-wrap" style="background: linear-gradient(135deg, #EFF6FF, #DBEAFE);">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
         </div>
-        <h3 style="font-size: 1.6rem; font-weight: 600; color: #0F172A; margin-bottom: 16px; letter-spacing: -0.02em;">Website Development</h3>
-        <p style="color: #64748B; line-height: 1.7; font-size: 1rem;">India's leading development agency with 10+ years of experience crafting lightning-fast, high-converting web applications.</p>
+        <div class="card-content">
+          <h3>Website Development</h3>
+          <p>India's leading development agency with 10+ years of experience crafting lightning-fast, high-converting web applications.</p>
+        </div>
+        <div class="card-footer">
+          Learn more <span>→</span>
+        </div>
       </div>
 
       <!-- Card 2 -->
-      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 28px; padding: 48px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);" onmouseover="this.style.borderColor='#10B981'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 30px 60px -12px rgba(16,185,129,0.1)';" onmouseout="this.style.borderColor='#E2E8F0'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01)';">
-        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #ECFDF5, #D1FAE5); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+      <div class="professional-card">
+        <div class="card-icon-wrap" style="background: linear-gradient(135deg, #ECFDF5, #D1FAE5);">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
         </div>
-        <h3 style="font-size: 1.6rem; font-weight: 600; color: #0F172A; margin-bottom: 16px; letter-spacing: -0.02em;">Mobile App Dev</h3>
-        <p style="color: #64748B; line-height: 1.7; font-size: 1rem;">Our expert engineering teams build native and cross-platform apps to establish your mobile dominance and user engagement.</p>
+        <div class="card-content">
+          <h3>Mobile App Dev</h3>
+          <p>Our expert engineering teams build native and cross-platform apps to establish your mobile dominance and user engagement.</p>
+        </div>
+        <div class="card-footer">
+          Learn more <span>→</span>
+        </div>
       </div>
 
       <!-- Card 3 -->
-      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 28px; padding: 48px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);" onmouseover="this.style.borderColor='#F59E0B'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 30px 60px -12px rgba(245,158,11,0.1)';" onmouseout="this.style.borderColor='#E2E8F0'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01)';">
-        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #FFFBEB, #FEF3C7); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+      <div class="professional-card">
+        <div class="card-icon-wrap" style="background: linear-gradient(135deg, #FFFBEB, #FEF3C7);">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
         </div>
-        <h3 style="font-size: 1.6rem; font-weight: 600; color: #0F172A; margin-bottom: 16px; letter-spacing: -0.02em;">Hosting & Domains</h3>
-        <p style="color: #64748B; line-height: 1.7; font-size: 1rem;">High-performance, secure servers with 99.9% uptime. Host your infrastructure with ultimate reliability and global scale.</p>
+        <div class="card-content">
+          <h3>Hosting & Domains</h3>
+          <p>High-performance, secure servers with 99.9% uptime. Host your infrastructure with ultimate reliability and global scale.</p>
+        </div>
+        <div class="card-footer">
+          Learn more <span>→</span>
+        </div>
       </div>
 
       <!-- Card 4 -->
-      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 28px; padding: 48px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);" onmouseover="this.style.borderColor='#EC4899'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 30px 60px -12px rgba(236,72,153,0.1)';" onmouseout="this.style.borderColor='#E2E8F0'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01)';">
-        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #FDF2F8, #FCE7F3); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+      <div class="professional-card">
+        <div class="card-icon-wrap" style="background: linear-gradient(135deg, #FDF2F8, #FCE7F3);">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#DB2777" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
         </div>
-        <h3 style="font-size: 1.6rem; font-weight: 600; color: #0F172A; margin-bottom: 16px; letter-spacing: -0.02em;">Digital Marketing</h3>
-        <p style="color: #64748B; line-height: 1.7; font-size: 1rem;">Data-driven campaigns across Social and Search to capture peak audience engagement and deliver measurable ROI.</p>
+        <div class="card-content">
+          <h3>Digital Marketing</h3>
+          <p>Data-driven campaigns across Social and Search to capture peak audience engagement and deliver measurable ROI.</p>
+        </div>
+        <div class="card-footer">
+          Learn more <span>→</span>
+        </div>
       </div>
 
       <!-- Card 5 -->
-      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 28px; padding: 48px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);" onmouseover="this.style.borderColor='#8B5CF6'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 30px 60px -12px rgba(139,92,246,0.1)';" onmouseout="this.style.borderColor='#E2E8F0'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01)';">
-        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #F5F3FF, #EDE9FE); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+      <div class="professional-card">
+        <div class="card-icon-wrap" style="background: linear-gradient(135deg, #F5F3FF, #EDE9FE);">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
         </div>
-        <h3 style="font-size: 1.6rem; font-weight: 600; color: #0F172A; margin-bottom: 16px; letter-spacing: -0.02em;">SEO Optimization</h3>
-        <p style="color: #64748B; line-height: 1.7; font-size: 1rem;">Technical audits, content strategy, and aggressive keyword targeting to dominate top rankings and organic reach.</p>
+        <div class="card-content">
+          <h3>SEO Optimization</h3>
+          <p>Technical audits, content strategy, and aggressive keyword targeting to dominate top rankings and organic reach.</p>
+        </div>
+        <div class="card-footer">
+          Learn more <span>→</span>
+        </div>
       </div>
 
       <!-- Card 6 -->
-      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 28px; padding: 48px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01);" onmouseover="this.style.borderColor='#6366F1'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 30px 60px -12px rgba(99,102,241,0.1)';" onmouseout="this.style.borderColor='#E2E8F0'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.02), 0 2px 4px -1px rgba(0,0,0,0.01)';">
-        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #EEF2FF, #E0E7FF); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+      <div class="professional-card">
+        <div class="card-icon-wrap" style="background: linear-gradient(135deg, #EEF2FF, #E0E7FF);">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
         </div>
-        <h3 style="font-size: 1.6rem; font-weight: 600; color: #0F172A; margin-bottom: 16px; letter-spacing: -0.02em;">Live Training</h3>
-        <p style="color: #64748B; line-height: 1.7; font-size: 1rem;">Python & PHP practical instruction on live production environments to elevate new programmers to industry standards.</p>
+        <div class="card-content">
+          <h3>Live Training</h3>
+          <p>Python & PHP practical instruction on live production environments to elevate new programmers to industry standards.</p>
+        </div>
+        <div class="card-footer">
+          Learn more <span>→</span>
+        </div>
       </div>
 
     </div>

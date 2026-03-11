@@ -11,8 +11,12 @@ let activeObservers = [];
 /* ── GLOBAL FUNCTIONS ── */
 window.toggleMobileMenu = function() {
   const nav = document.getElementById('mobileNav');
+  const btn = document.querySelector('.mobile-menu-btn');
   if (nav) {
-    nav.classList.toggle('active');
+    nav.classList.toggle('open');
+  }
+  if (btn) {
+    btn.classList.toggle('open');
   }
 };
 
@@ -30,8 +34,15 @@ function cleanup() {
     clearInterval(numbersIntervalId);
     numbersIntervalId = null;
   }
-  activeObservers.forEach(obs => obs.disconnect());
+  activeObservers.forEach(obs => {
+    if (obs && typeof obs.disconnect === 'function') {
+      obs.disconnect();
+    }
+  });
   activeObservers = [];
+  
+  // Reset any body-bound states
+  document.body.classList.remove('nav-open');
 }
 
 /* ── FEATURE MODULES ── */

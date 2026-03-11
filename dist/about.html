@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AR Solutions India — Web Development & Web Hosting Company</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/main-BYkN9igj.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-1LYmcXYN.css">
+  <script type="module" crossorigin src="./assets/main-DMrpXIw0.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-C1MxCBRx.css">
 </head>
 <body>
 
 <div class="page-wrap">
 
 <nav>
-  <a class="logo" href="/index.html">
+    <a class="logo" href="./index.html">
     <div class="logo-icon">
       <svg viewBox="0 0 18 18" fill="none">
         <path d="M9 2L15.5 5.5V12.5L9 16L2.5 12.5V5.5L9 2Z" stroke="white" stroke-width="1.5" fill="none"/>
@@ -23,13 +23,13 @@
     AR Solutions India
   </a>
   <ul class="nav-center">
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/services.html">Services <span style="font-size:.7rem;opacity:.5;">▾</span></a></li>
-    <li><a href="/hosting.html">Hosting</a></li>
-    <li><a href="/index.html#domain">Domain</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./services.html">Services <span style="font-size:.7rem;opacity:.5;">▾</span></a></li>
+    <li><a href="./hosting.html">Hosting</a></li>
+    <li><a href="./index.html#domain">Domain</a></li>
   </ul>
   <div class="nav-right">
-    <button class="btn-signup" onclick="window.location.href='/index.html#contact'">Get started</button>
+    <button class="btn-signup" onclick="window.location.href='./index.html#contact'">Get started</button>
   </div>
   <button class="mobile-menu-btn" aria-label="Menu" onclick="toggleMobileMenu()">
     <span></span><span></span><span></span>
@@ -38,11 +38,21 @@
 
 <!-- Mobile Navigation -->
 <div class="mobile-nav" id="mobileNav">
-  <a href="/about.html" onclick="toggleMobileMenu()">About</a>
-  <a href="/services.html" onclick="toggleMobileMenu()">Services</a>
-  <a href="/hosting.html" onclick="toggleMobileMenu()">Hosting</a>
-  <a href="/index.html#domain" onclick="toggleMobileMenu()">Domain</a>
-  <button class="btn-signup" onclick="toggleMobileMenu(); window.location.href='/index.html#contact'" style="margin-top: 20px;">Get started</button>
+  <div class="mobile-nav-content">
+    <div class="mobile-nav-links">
+      <a href="./about.html" onclick="toggleMobileMenu()"><span>01</span> About</a>
+      <a href="./services.html" onclick="toggleMobileMenu()"><span>02</span> Services</a>
+      <a href="./hosting.html" onclick="toggleMobileMenu()"><span>03</span> Hosting</a>
+      <a href="./index.html#domain" onclick="toggleMobileMenu()"><span>04</span> Domain</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <button class="btn-signup" onclick="toggleMobileMenu(); window.location.href='./index.html#contact'">Get started</button>
+      <div class="mobile-socials">
+        <span>info@arsolutionsindia.com</span>
+        <span>+91-98911143977</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <main id="swup" class="transition-fade">
@@ -52,7 +62,7 @@
   <div style="position: absolute; top: -10%; left: -10%; width: 40%; height: 40%; background: radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 70%); pointer-events: none;"></div>
   <div style="position: absolute; bottom: 10%; right: -5%; width: 30%; height: 30%; background: radial-gradient(circle, rgba(99,102,241,0.05) 0%, transparent 70%); pointer-events: none;"></div>
 
-  <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 80px; align-items: center; position: relative; z-index: 2;">
+  <div class="grid-auto-fit" style="max-width: 1200px; margin: 0 auto; align-items: center; position: relative; z-index: 2;">
     
     <div>
       <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.15); border-radius: 100px; padding: 8px 20px; font-size: 0.82rem; color: #2563EB; font-weight: 600; margin-bottom: 32px; letter-spacing: 0.02em; text-transform: uppercase;">
@@ -139,10 +149,10 @@
     </div>
     <div class="footer-nav">
       <div class="footer-col">
-        <a href="/index.html#services" class="bold">Web Design</a>
-        <a href="/index.html#services" class="bold">Mobile App Dev <span style="font-size:.7rem;opacity:.5;">▾</span></a>
-        <a href="/index.html#services" class="bold">SEO Services</a>
-        <a href="/index.html#contact" class="bold">Practical Training</a>
+        <a href="./index.html#services" class="bold">Web Design</a>
+        <a href="./index.html#services" class="bold">Mobile App Dev <span style="font-size:.7rem;opacity:.5;">▾</span></a>
+        <a href="./index.html#services" class="bold">SEO Services</a>
+        <a href="./index.html#contact" class="bold">Practical Training</a>
 
       </div>
       <div class="footer-col">
